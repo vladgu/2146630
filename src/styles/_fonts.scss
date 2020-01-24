@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  font-family: 'Arial' !important;
+  font-size: 14px;
+  color: $base-black-color-1;
+}
+
+// Font Sizes fs-x
+$interval: 1;
+@for $i from 0 through 40 {
+  .fs-#{10 + $interval * $i} {
+    font-size: #{10 + $interval * $i}px !important;
+  }
+}
+
+// Line Heights lh-x
+$interval: 1;
+@for $i from 0 through 30 {
+  .lh-#{10 + $interval * $i} {
+    line-height: #{10 + $interval * $i}px !important;
+  }
+}
+
+// Font Weights
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.fw-normal {
+  font-weight: normal !important;
+}

@@ -1,9 +1,16 @@
 import React from 'react';
-import '../styles/_main.scss';
+
+import UserInfo from '../components/UserInfo'
+import ServicesInfo from '../components/ServicesInfo'
 
 const App = () => {
   return (
-    <div>1</div>
+    <main className='app'>
+      <div className='wrapper'>
+        <UserInfo />
+        <ServicesInfo />
+      </div>
+    </main>
   )
 }
 

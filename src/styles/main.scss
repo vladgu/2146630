@@ -1,0 +1,23 @@
+// Base Colors
+$base-white-color-1: #ffffff;
+$base-white-color-2: #f2f2f2;
+
+$base-grey-color-1: #dadada;
+$base-grey-color-2: #808080;
+
+$base-black-color-1: #333333;
+$base-black-color-2: #000000;
+
+$base-yellow-color-1: #fffbc8;
+$base-yellow-color-2: #fdd639;
+
+$base-blue-color-1: #ace2f8;
+$base-blue-color-2: #005da1;
+
+$base-green-color: #b1e19b;
+
+@import 'reset';
+@import 'fonts';
+@import 'app';
+@import 'userInfo';
+@import 'servicesInfo';

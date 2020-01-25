@@ -30,12 +30,12 @@ const Form = ({ addComment }) => {
     return `${day} ${month} ${year}`
   }
 
-  const keyChecker = e => {
-    console.log(e)
-    // if (e.keyCode == 13 && e.ctrlKey) {
-    //   console.log('YAY');
-    // }
-  }
+
+  window.addEventListener('keydown', e => {
+    if (e.keyCode === 13 && e.ctrlKey) {
+      submitHandle(e)
+    }
+  })
 
   const submitHandle = e => {
     e.preventDefault()
@@ -46,6 +46,7 @@ const Form = ({ addComment }) => {
         message
       })
       e.target.parentNode.reset()
+      // document.querySelector('.form-wrapper').reset()
       setName('')
       setMessage('')
     }
@@ -53,9 +54,9 @@ const Form = ({ addComment }) => {
   }
 
   return (
-    <form className='form-wrapper' onSubmit={ e => keyChecker(e) }>
-      <input className='form-input' type="text" placeholder='Ваше имя' onInput={ e => setName(e.target.value) } />
-      <textarea className='form-textarea' rows='4' placeholder='Ваше сообщение' onInput={ e => setMessage(e.target.value) } />
+    <form className='form-wrapper'>
+      <input className='form-input' type="text" placeholder='Ваше имя' onInput={ e => setName(e.target.value.trim()) } />
+      <textarea className='form-textarea' rows='4' placeholder='Ваше сообщение' onInput={ e => setMessage(e.target.value.trim()) } />
       <button className='form-button fw-bold' onClick={ e => submitHandle(e) }>{ locales.addComment }</button>
     </form>
   )

@@ -4,6 +4,10 @@
   align-items: flex-start;
 
   .wrapper {
+    height: 100vh;
     max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

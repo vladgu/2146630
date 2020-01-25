@@ -1,0 +1,42 @@
+.commentitem-wrapper {
+  margin: 10px 0;
+
+  .commentitem-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .commentitem-info-name {
+      margin-right: 15px;
+    }
+
+    .commentitem-info-date {
+      margin-top: 2px;
+      color: $base-grey-color-2;
+    }
+  }
+  .commentitem-info-message-card {
+    padding: 20px;
+    border: 1px solid $base-grey-color-1;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+    position: relative;
+    .triangle-grey {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -12px;
+      left: 18.5px;
+      border-bottom: 12px solid $base-grey-color-1;
+      border-right: 12px solid transparent;
+    }
+    .triangle-white {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -9.5px;
+      border-bottom: 10px solid $base-white-color-1;
+      border-right: 10px solid transparent;
+      z-index: 1;
+    }
+  }
+}

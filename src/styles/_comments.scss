@@ -1,0 +1,44 @@
+.comments-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 15px;
+
+  .comments-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .comments-header-group {
+      display: flex;
+      align-items: center;
+
+      .comments-header-button {
+        margin-right: 10px;
+        font-size: 14px;
+        color: $base-blue-color-2;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: 0.2s all;
+        &:hover {
+          transition: 0.2s all;
+          color: $base-black-color-2;
+        }
+        &.active {
+          font-size: 16px;
+          line-height: 16px;
+          text-decoration: none;
+          color: $base-black-color-1;
+          font-weight: bold;
+          cursor: default;
+        }
+      }
+      .comments-header-icons-text {
+        margin-right: 20px;
+
+        .icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

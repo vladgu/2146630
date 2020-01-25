@@ -3,7 +3,7 @@ import React from 'react'
 import locales from '../../locales'
 
 const ServicesInfo = () => (
-  <div className='servicesinfo-wrapper'>
+  <section className='servicesinfo-wrapper'>
     <div className='servicesinfo-spacer' />
     <div className='servicesinfo-content'>
       <h3 className='servicesinfo-content-title fs-13 lh-15'>{ locales.services.title }</h3>
@@ -31,7 +31,7 @@ const ServicesInfo = () => (
     </div>
 
 
-  </div>
+  </section>
 )
 
 export default ServicesInfo

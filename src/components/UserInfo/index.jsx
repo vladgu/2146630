@@ -4,7 +4,7 @@ import locales from '../../locales'
 import avatar from '../../images/avatar.png'
 
 const UserInfo = () => (
-  <div className='userinfo-wrapper'>
+  <section className='userinfo-wrapper'>
     <img className='userinfo-avatar' src={ avatar } alt='avatar' />
     <div className='userinfo-info'>
       <h1 className='fs-16 lh-20 fw-bold'>{ locales.user.name }</h1>
@@ -14,7 +14,7 @@ const UserInfo = () => (
         <p>{ locales.user.status2 }</p>
       </div>
     </div>
-  </div>
+  </section>
 )
 
 export default UserInfo

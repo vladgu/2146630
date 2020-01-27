@@ -7,7 +7,6 @@ import Form from '../components/Form'
 import locales from '../locales'
 
 const App = () => {
-
   const [comments, setComments] = useState(locales.feedbacks.comments)
 
   const addComment = comment => {
@@ -20,13 +19,12 @@ const App = () => {
         <div>
           <UserInfo />
           <ServicesInfo />
-          <Comments comments={ comments } />
+          <Comments comments={comments} />
         </div>
-        <Form addComment={ addComment } />
+        <Form addComment={addComment} />
       </div>
     </main>
   )
 }
 
-
-export default App;
+export default App
